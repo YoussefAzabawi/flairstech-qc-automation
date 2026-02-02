@@ -1,0 +1,5 @@
+scenario,email,password,expectedStatus,expectedMessage
+valid,user_valid@example.com,Password123!,200,User exists!
+missing_email,,Password123!,404,"User not found!"
+invalid,user_invalid@example.com,WrongPass!23,404,User not found!
+

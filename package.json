@@ -1,0 +1,22 @@
+{
+  "name": "flairstech-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:web && npm run test:api",
+    "test:web": "npx playwright test web/tests",
+    "test:api": "npx playwright test api/tests",
+    "test:ci": "npx playwright test --reporter=html",
+    "lint": "echo \"(no linter configured)\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "ajv": "^8.17.1"
+  }
+}

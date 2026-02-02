@@ -1,0 +1,14 @@
+{
+  "name": "flairstech-assessment-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test:mobile": "mocha \"test/**/*.spec.js\" --timeout 600000"
+  },
+  "devDependencies": {
+    "mocha": "^11.0.1",
+    "chai": "^5.1.1",
+    "webdriverio": "^8.44.1"
+  }
+}
+
