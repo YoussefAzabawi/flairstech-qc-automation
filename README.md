@@ -50,18 +50,58 @@ npm test
 
 ## Run Mobile Tests (Appium + Mocha)
 
-In one terminal start Appium:
+Mobile tests use:
 
-```bash
-appium
-```
+Appium
 
-In another terminal:
+WebdriverIO
 
-```bash
+Mocha
+
+Sauce Labs Android Emulator
+
+Configuration
+
+Mobile capabilities are defined directly in the test setup (remote execution):
+
+Platform: Android
+
+Automation: UiAutomator2
+
+App: Sauce Labs Sample App (from Sauce Storage)
+
+Execution: Remote (Sauce Labs)
+
+Run Mobile Tests
 cd mobile
-npm run test:mobile
-```
+npx mocha test/login.flow.spec.js
+
+
+No local Appium server is required
+Tests connect directly to Sauce Labs (ondemand.eu-central-1.saucelabs.com)
+
+Sauce Labs Integration
+
+Tests run on Android GoogleAPI Emulator
+
+APK is loaded using:
+
+storage:filename=Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
+
+
+Each test run is tagged with:
+
+Build ID
+
+Test name
+
+Artifacts available in Sauce Labs:
+
+Video recording
+
+Logs
+
+Screenshots (if enabled)
 
 ## CI/CD
 
