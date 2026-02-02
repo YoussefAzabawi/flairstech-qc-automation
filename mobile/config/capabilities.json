@@ -1,0 +1,9 @@
+{
+    "platformName": "Android",
+    "automationName": "UiAutomator2",
+    "deviceName": "Android Emulator",
+    "app": "/absolute/path/to/SauceLabs.Sample.App.Android.apk",
+    "newCommandTimeout": 300,
+    "autoGrantPermissions": true
+  }
+  
