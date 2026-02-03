@@ -50,7 +50,7 @@ npm test
 
 ## Run Mobile Tests (Appium + Mocha)
 
-Mobile tests use:
+- Mobile tests use:
 
 Appium
 
@@ -60,36 +60,38 @@ Mocha
 
 Sauce Labs Android Emulator
 
-Configuration
+- Configuration
 
 Mobile capabilities are defined directly in the test setup (remote execution):
 
-Platform: Android
+- Platform: Android
 
-Automation: UiAutomator2
+- Automation: UiAutomator2
 
-App: Sauce Labs Sample App (from Sauce Storage)
+- App: Sauce Labs Sample App (from Sauce Storage)
 
-Execution: Remote (Sauce Labs)
+- Execution: Remote (Sauce Labs)
 
 Run Mobile Tests
+```bash
 cd mobile
 npx mocha test/login.flow.spec.js
+```
 
 
-No local Appium server is required
+- No local Appium server is required
 Tests connect directly to Sauce Labs (ondemand.eu-central-1.saucelabs.com)
 
 Sauce Labs Integration
 
 Tests run on Android GoogleAPI Emulator
 
-APK is loaded using:
+- APK is loaded using:
 
 storage:filename=Android.SauceLabs.Mobile.Sample.app.2.7.1.apk
 
 
-Each test run is tagged with:
+- Each test run is tagged with:
 
 Build ID
 
